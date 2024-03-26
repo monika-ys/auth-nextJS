@@ -1,6 +1,11 @@
-export default function Home() {
+'use client'; 
+import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from "./dashboard/page";
 
+const Home=() =>{
   return (
-    <h1>Home</h1>
+    <Dashboard />
   );
 }
+
+export default Home

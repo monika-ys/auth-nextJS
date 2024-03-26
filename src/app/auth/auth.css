@@ -8,10 +8,19 @@
     font-size: 12px;
     padding: 10px;
 }
-/* 
-.signup-form .MuiFormLabel-root{
-    font-size: 20px;
+
+/* signin */
+.signin-header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: gray;
 }
-.signup-form .MuiInputBase-root{
-    font-size: 30px;
-} */
+.signin-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signin-form button{
+    margin-top:10px;
+}
