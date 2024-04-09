@@ -2,7 +2,7 @@
 
 import { Card, CardContent,Grid, CardHeader, Container, TextField, Button } from '@mui/material'
 import {useForm} from 'react-hook-form'
-import { useRouter} from "next/navigation"
+import { redirect, useRouter} from "next/navigation"
 import { ToastContainer, toast } from 'react-toastify';
 import { UseFormInputs } from '@/lib/types';
 import 'react-toastify/dist/ReactToastify.css';
@@ -24,6 +24,7 @@ const SignIn=() =>{
             if(respData.data.status===200){
                 localStorage.setItem('userdetails',JSON.stringify(respData?.data))
                 toast.success('done')
+                router.push('/dashboard')
             }else{
                 toast.error(respData.data.error)
             }

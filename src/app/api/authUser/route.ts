@@ -24,7 +24,7 @@ export async function POST(request:Request,response:NextApiResponse) {
             });
                 return NextResponse.json({data:{email:user.email,name:user.username,token:token,status:200}},{status:200})
             } 
-            catch (err) {
+            catch (err:any) {
                 return NextResponse.json({data:{error: err.error,status:err.code}},{status:err.code})
             }           
     }

@@ -1,0 +1,22 @@
+.category-container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-button{
+    background-color: #03a9f4;
+    color: #fff;
+    margin:10px auto;
+    text-transform:none
+}
+.MuiFormLabel-root{
+    font-size: 12px;
+    line-height: 1;
+}
+.MuiTextField-root .MuiInputBase-input .MuiInputBase-input{
+    padding: 10px;
+}
+.MuiOutlinedInput-input{
+    padding: 10px;
+}
